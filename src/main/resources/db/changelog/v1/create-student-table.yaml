@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20230521-01
+      author: vusal
+      changes:
+        - createTable:
+            tableName: students
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+              - column:
+                  name: surname
+                  type: VARCHAR(100)
+              - column:
+                  name: age
+                  type: INT
+              - column:
+                  name: university
+                  type: VARCHAR(17)
+              - column:
+                  name: email
+                  type: VARCHAR(100)
+              - column:
+                  name: finCode
+                  type: VARCHAR(100)
+              - column:
+                  name: birthDate
+                  type: datetime
+
+
